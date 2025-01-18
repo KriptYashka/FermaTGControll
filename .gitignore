@@ -29,3 +29,6 @@ crashlytics-build.properties
 fabric.properties
 
 *.db
+
+.env
+*.pyc
