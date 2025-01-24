@@ -1,5 +1,4 @@
 from aiogram import Dispatcher
-
 from routers.hello.router import router as router_hello
 
 

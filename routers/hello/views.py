@@ -1,3 +1,5 @@
+import logging
+
 import requests
 
 from depends.settings import BASE_URL, ARTIFACT_TOKEN
@@ -15,5 +17,5 @@ def move(x: int, y: int):
         "Authorization": 'Bearer ' + ARTIFACT_TOKEN
     }
     response = requests.post(url, json=data, headers=headers)
-    print(response.status_code)
-    print(response.content)
+    logging.debug(response.status_code)
+    logging.debug(response.content)
